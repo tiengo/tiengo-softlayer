@@ -1,0 +1,14 @@
+{
+  "name": "tiengo-softlayer",
+  "version": "0.1.0",
+  "author": "Andre Tiengo",
+  "summary": "Manage your Softlayer infrastructure with Puppet",
+  "license": "Apache 2.0",
+  "source": "https://github.com/tiengo/tiengo-softlayer",
+  "project_page": "https://github.com/tiengo/tiengo-softlayer",
+  "issues_url": "https://github.com/tiengo/tiengo-softlayer/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
