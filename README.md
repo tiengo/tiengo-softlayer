@@ -30,13 +30,13 @@ Creating a cloud instance:
 
 ```puppet
 sl_compute { 'puppet.example.com':
-  ensure                 => present,
-  os_code                => 'DEBIAN_7_64',
-  flavor_id              => 'm1.tiny',
-  datacenter             => 'wdc01',
-  domain                 => 'example.com',
-  keypairs               => [ 'key_name' ],
-  provision_script       => 'https://example.com/postinstall.sh',
+  ensure           => present,
+  os_code          => 'DEBIAN_7_64',
+  flavor_id        => 'm1.tiny',
+  datacenter       => 'wdc01',
+  domain           => 'example.com',
+  key_pairs        => [ 'key_name' ],
+  provision_script => 'https://example.com/postinstall.sh',
 }
 ```
 ##TODO
