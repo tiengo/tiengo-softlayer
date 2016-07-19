@@ -21,8 +21,11 @@ and will help you to build your cloud infrastructure on Softlayer.
 
 ##Setup
 
+```bash
+gem install fog-softlayer  
 export SOFTLAYER_USERNAME='SLXXXXXX'  
 export SOFTLAYER_API_KEY='aa0aaa000aaa000'
+```
 
 ##Usage
 
