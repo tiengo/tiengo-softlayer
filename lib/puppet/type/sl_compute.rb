@@ -72,8 +72,8 @@ Puppet::Type.newtype(:sl_compute) do
   newparam(:key_pairs, :array_matching => :all) do
     defaultto []
     desc 'Specify the SSH Keys names allowed to access the compute instance.'
-    validate do |value|
-      fail 'key_pairs should be an Array' unless value.is_a?(Array)
+    munge do |value|
+      [*value]
     end
   end
 end

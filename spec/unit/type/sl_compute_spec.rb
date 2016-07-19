@@ -65,11 +65,4 @@ describe sl_compute do
       sl_compute.new({ :name => 'puppet', :datacenter => '' })
     }.to raise_error(Puppet::Error, /Empty values are not allowed/)
   end
-
-  it 'key_pairs should be an array' do
-    expect {
-      sl_compute.new({ :name => 'puppet', :key_pairs => 'tiengo' })
-    }.to raise_error(Puppet::Error, /key_pairs should be an Array/)
-  end
-
 end
